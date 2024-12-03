@@ -1,5 +1,10 @@
-import '../styling.css/Tree.css'
+import { useState } from 'react';
+import '../styling.css/Tree.css'    
 export const Tree = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+    const handleClick = (index) => {
+        setActiveIndex(activeIndex === index ? null : index); // Toggle activeIndex
+    };
     return (
         <div className='main-div'>
             <div>
@@ -12,6 +17,22 @@ export const Tree = () => {
                 {activeIndex === 0 && (
                     <p className="para">
                         At Aria solutions, we've taken the consultancy concept one step further by offering a full-service management organization with expertise.
+                    </p>
+                )}
+                <h3 className="heading" onClick={() => handleClick(1)}>
+                    Great Strategic Business Planning
+                </h3>
+                {activeIndex === 1 && (
+                    <p className="para">
+                        Aria partners with businesses to business growth and development ideas including environment analysis, plan execution, and evaluation.
+                    </p>
+                )}
+                <h3 className="heading" onClick={() => handleClick(2)}>
+                    Online Marketing Campaigns
+                </h3>
+                {activeIndex === 2 && (
+                    <p className="para">
+                        An awesome online marketing plan won't save your bad product, but paired with a good product, the sky is the limit for what can be achieved.
                     </p>
                 )}
             </div>
