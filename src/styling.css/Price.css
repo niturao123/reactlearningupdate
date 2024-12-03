@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;    
+    max-width: 300px;
+    border-radius: 1.09rem;
+    border: 1px solid #ebe8e8;
+ }
+h2{
+    margin-left: 10%;
+}
+p{
+    color: #787976;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+h3{
+    margin-left: 28%;
+    font-size: 20px;
+}

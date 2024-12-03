@@ -1,0 +1,55 @@
+/* styling of phone screen  */
+
+ button {
+  width: 35%;
+  height: 40px;
+  margin-left: 30%;
+  margin-bottom: -8%;
+  color: white;
+  background-color: #20c997;
+  border: 0.9px solid #20c997;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: white;
+  color: #20c997;
+}
+span{
+  color: #20c997;
+}
+
+
+
+/*  styling of desktop */
+@media (min-width:764px) {
+  .pricecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    padding: 0px;
+    margin: 0px;
+
+  }
+  button {
+  width: 35%;
+  height: 40px;
+  margin-left: 30%;
+  margin-bottom: -8%;
+  color: white;
+  background-color: #20c997;
+  border: 0.9px solid #20c997;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: white;
+  color: #20c997;
+}
+span{
+  color: #20c997;
+}
+}
