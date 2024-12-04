@@ -8,9 +8,10 @@ export const Tree = () => {
     return (
         <div className='main-div'>
             <div>
-                <img src="treeimg.png" alt="A tree and river image" />
+                <img className='treeImg' src="treeimg.png" alt="A tree and river image" />
             </div>
             <div>
+                <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
                 <h3 className="heading" onClick={() => handleClick(0)}>
                     How Can Aria Help Your Business
                 </h3>

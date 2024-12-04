@@ -1,0 +1,44 @@
+.maindiv{
+    display: block;
+}
+.image-container img{
+    width: 100%;
+}
+.intro-para{
+    color: #20c997;
+}
+h4{
+    margin-left: 12%;
+}
+@media (min-width:764px) {
+   
+    .maindiv{
+        display: flex;
+    }
+    .paradiv{
+        margin-left: 8%;
+    }
+    .intro-para{
+        color: #20c997;
+        font-size: 1em;
+        }
+        .image-container{
+            margin-right: 8%;
+        }
+    .image-container img:hover {
+        transform: scale(1.05);
+    }
+    .first-para, .second-para{
+        max-width: 40%;
+        font-size: 1.2rem;
+    }
+    .maindiv h2{
+        max-width: 35%;
+        font-size: 2em;
+    }
+    h4{
+        margin-left: 12%;
+    }
+    
+    
+}

@@ -1,6 +1,7 @@
 import './App.css'
 import { PriceCard } from './component/Price'
 import { Tree } from './component/Tree'
+import { Girl } from './component/Girl'
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
     subheading= "$299"/>
     </div>
     <Tree/>
+    <Girl/>
     
     </>
   )
