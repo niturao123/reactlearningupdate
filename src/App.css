@@ -53,3 +53,9 @@ span{
   color: #20c997;
 }
 }
+.team-div{
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+

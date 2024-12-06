@@ -24,7 +24,7 @@ ul{
     list-style-type: square;
 
 }
-li::before{
+li::marker {
     color: #20c997;
-
-}
+  }
+  

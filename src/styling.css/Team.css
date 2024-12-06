@@ -1,0 +1,9 @@
+.team-img:hover{
+    transform: scale(1.05);
+}
+.teamDiv p,h5{
+font-size: 1.5em;
+}
+.logo:hover{
+    color: #20c997;
+}
