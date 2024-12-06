@@ -9,6 +9,9 @@
 h2{
     margin-left: 10%;
 }
+.container h3:hover{
+color: black;
+}
 p{
     color: #787976;
     margin-left: 10%;

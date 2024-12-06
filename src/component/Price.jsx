@@ -1,6 +1,7 @@
 import "../styling.css/Price.css"
 export const PriceCard = ({ image, heading, para, listItems, subheading }) => {
     return (
+        <div>
         <div className="container">
             <img src={image} alt="A coffee cup" />
             <h2>{heading}</h2>
@@ -13,7 +14,10 @@ export const PriceCard = ({ image, heading, para, listItems, subheading }) => {
                 }
             </ul>
             <h3> starting at  <span>{subheading} </span></h3>
-            <button>DETAILS</button>
+        </div>
+        <div>
+        <button>DETAILS</button>
+        </div>
         </div>
 
     )
