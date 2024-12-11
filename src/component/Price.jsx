@@ -1,6 +1,7 @@
 import "../styling.css/Price.css"
 export const PriceCard = ({ image, heading, para, listItems, subheading }) => {
     return (
+
         <div>
         <div className="container">
             <img src={image} alt="A coffee cup" />

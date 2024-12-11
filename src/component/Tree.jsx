@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../styling.css/Tree.css'    
-export const Tree = () => {
+import '../styling.css/Tree.css'
+export const Tree = ({listItem}) => {
     const [activeIndex, setActiveIndex] = useState(null);
     const handleClick = (index) => {
         setActiveIndex(activeIndex === index ? null : index); // Toggle activeIndex
@@ -11,10 +11,17 @@ export const Tree = () => {
                 <img className='treeImg' src="treeimg.png" alt="A tree and river image" />
             </div>
             <div>
+            <ul>
+                {
+                    listItem.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))
+                }
+            </ul>
                 <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
-                <div className="circle">1</div>
 
                 <h3 className="heading" onClick={() => handleClick(0)}>
+                
                     How Can Aria Help Your Business
                 </h3>
                 {activeIndex === 0 && (
@@ -22,20 +29,16 @@ export const Tree = () => {
                         At Aria solutions, we've taken the consultancy concept one step further by offering a full-service management organization with expertise.
                     </p>
                 )}
-                          <div className="circle">2</div>
-
                 <h3 className="heading" onClick={() => handleClick(1)}>
-                    Great Strategic Business Planning
+                Great Strategic Business Planning
                 </h3>
                 {activeIndex === 1 && (
                     <p className="para">
                         Aria partners with businesses to business growth and development ideas including environment analysis, plan execution, and evaluation.
                     </p>
                 )}
-                          <div className="circle">3</div>
-
                 <h3 className="heading" onClick={() => handleClick(2)}>
-                    Online Marketing Campaigns
+                Online Marketing Campaigns
                 </h3>
                 {activeIndex === 2 && (
                     <p className="para">

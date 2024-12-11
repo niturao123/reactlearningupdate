@@ -1,0 +1,32 @@
+.riverDiv{
+    display: flex;
+}
+.riverDiv h6{
+    font-size: 1.02em;
+    color:#484a4c ;
+    margin: 1%;
+}
+.riverDiv p{
+    width: 35%;
+}
+.riverDiv p a {
+    color: #20c997;
+}
+.average{
+  width: 40%;
+  height: 2%;
+  background-color:#20c997;
+}
+.opportunity-div{
+    width: 40%;
+    height: 2%;
+    background-color:#20c997;  
+}
+.onlineMarketing-div{
+    width: 40%;
+    height: 2%;
+    background-color:#20c997;  
+}
+.imageDiv{
+    display: flex;
+}

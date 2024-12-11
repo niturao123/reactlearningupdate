@@ -58,4 +58,18 @@ span{
   justify-content: center;
   gap: 3%;
 }
+@media (min-width:375px){
+  .team-div{
+   display: block;
+   margin-left: 20%;
+  }
+  .teamDiv p,h5{
+    font-size: 1.5em;
+    }
+    
+    
+ }
+ .svg-div{
+  display: flex;
+ }
 

@@ -3,10 +3,13 @@ import { PriceCard } from './component/Price'
 import { Tree } from './component/Tree'
 import { Girl } from './component/Girl'
 import { Team } from './component/Team'
+import { Form } from './component/Form'
+import { River } from './component/River'
 function App() {
   return (
     <>
     <div className='pricecontainer'>
+      
     <PriceCard image ="cupimg.jpg"
     heading = "Off The Ground Off The Ground"
     para = "Perfect for fresh ideas or young startups, this package will help get the business off the ground"
@@ -24,11 +27,12 @@ function App() {
     listItems = {["Maintaining the leader status", "Acquisitions the right way"]}
     subheading= "$299"/>
     </div>
-    <Tree/>
+    <Tree listItem = {[1, 2,3]}/>
+    <River/>
     <Girl/>
     <div className='team-div'>
-      {/* <h3 className='team-heading'>Our Team Of Consultants</h3 >
-      <p className='team-para'>We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p> */}
+      <h3 className='team-heading'>Our Team Of Consultants</h3 >
+      <p className='team-para'>We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
     <Team image = "team-1.png"
     para = "John Whitelong "
     heading ="General Manager"
@@ -50,6 +54,7 @@ function App() {
     img = "facebook.png"
     imga = "twitter.png"/>
     </div>
+    <Form/>
     </>
   )
 }
