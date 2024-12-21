@@ -17,16 +17,18 @@
   height: 2%;
   background-color:#20c997;
 }
-.opportunity-div{
+.opportunityDiv{
+    background-color: #20c997;
     width: 40%;
     height: 2%;
-    background-color:#20c997;  
 }
 .onlineMarketing-div{
     width: 40%;
     height: 2%;
     background-color:#20c997;  
 }
-.imageDiv{
-    display: flex;
+
+.riverImg{
+    margin-top: -27.8%;
+    margin-left: 57.5%;
 }

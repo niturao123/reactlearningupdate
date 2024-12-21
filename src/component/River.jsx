@@ -7,13 +7,13 @@ export const River = ()=>{
                 <p>Aria provides the most innovative and customized business services in the industry. Our <a href="#">Services</a> section shows how flexible we are for all types of budgets.</p>
                 <h6>Business Development 100%</h6>
                 <div className='average'></div>
+                <div>
                 <h6>Opportunity Spotting 76%</h6>
-                <div className='opportunity-div'></div>
+                </div>
+                <div className='opportunityDiv'></div>
                 <h6>Online Marketing 90%</h6>
                 <div className='onlineMarketing-div'></div>
-                <div className='imageDiv'>
-                  <img src="river.png" alt="A River image"/>  
-                </div>
+                  <img class="riverImg" src="river.png" alt="A River image"/>  
             </div>
         </div>
     )

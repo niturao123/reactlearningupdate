@@ -7,8 +7,29 @@ font-size: 1.5em;
 }
 .team-div{
   display: flex;
+  margin-right: 20%;
 }
+.team-para{
+  margin-left: 30%;
+  font-size:400 1em "Open Sans",sans-serif ;
 }
+.team-mainDiv{
+padding: 3%;
+background-color: #fbfbfb;
+}
+
+.team-heading{
+  font-size: 2em;
+  margin-left: 40%;
+  color: #484a46;
+}
+.team-heading:hover{
+  color: #484a46;
+}
+
+}
+
+
 
 
 

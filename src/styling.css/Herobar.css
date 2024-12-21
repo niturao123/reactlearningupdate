@@ -1,0 +1,46 @@
+.containers{
+  background-image: url('public/header-background.jpg');
+  height: 55rem;
+}
+/* Transparent Overlay */
+.overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+/* Heading Styling */
+ .containers .h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 18%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Paragraph Styling */
+.p {
+  font-size: 1.2em;
+  margin: 0 0 30px;
+font:400 1.125rem/1.625rem "Open Sans",sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  color: #fff;
+}
+.button{
+  width: 8%;
+  height: 50px;
+  color: white;
+  margin-left: 45%;
+  background-color: #20c997;
+  border: 0.125rem solid #20c997;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.button:hover{
+  color: #20c997;
+  background-color: transparent;
+}

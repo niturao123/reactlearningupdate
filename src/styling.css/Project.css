@@ -1,0 +1,81 @@
+.project-card {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Always visible */
+  transform: scale(1); /* Normal size by default */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+@media (min-width:764px){
+.project-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+  .project-overlay h3:hover{
+    color: white;
+  }
+  .project-overlay h3{
+    margin-left: 5%;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.9); /* Slightly shrink overlay initially */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .project-card:hover .project-overlay {
+    opacity: 1; /* Show overlay */
+    transform: scale(1); /* Expand overlay to normal size */
+  }
+}

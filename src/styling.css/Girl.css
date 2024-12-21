@@ -14,6 +14,8 @@ h4{
    
     .maindiv{
         display: flex;
+        margin-top: 8%;
+        margin-bottom: 2%;
     }
     .paradiv{
         margin-left: 8%;
