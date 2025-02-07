@@ -1,5 +1,5 @@
 .containers{
-  background-image: url('public/header-background.jpg');
+  background-image: url('/header-background.jpg');
   height: 55rem;
 }
 /* Transparent Overlay */
