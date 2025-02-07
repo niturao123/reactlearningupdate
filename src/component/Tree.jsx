@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../styling.css/Tree.css'
-export const Tree = ({listItem}) => {
+export const Tree = ({ listItem }) => {
     const [activeIndex, setActiveIndex] = useState(null);
     const handleClick = (index) => {
         setActiveIndex(activeIndex === index ? null : index); // Toggle activeIndex
@@ -11,17 +11,10 @@ export const Tree = ({listItem}) => {
                 <img className='treeImg' src="treeimg.png" alt="A tree and river image" />
             </div>
             <div>
-            <ul>
-                {
-                    listItem.map((item, index) => (
-                        <li key={index}>{item}</li>
-                    ))
-                }
-            </ul>
                 <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
 
                 <h3 className="heading" onClick={() => handleClick(0)}>
-                
+
                     How Can Aria Help Your Business
                 </h3>
                 {activeIndex === 0 && (
@@ -30,7 +23,7 @@ export const Tree = ({listItem}) => {
                     </p>
                 )}
                 <h3 className="heading" onClick={() => handleClick(1)}>
-                Great Strategic Business Planning
+                    Great Strategic Business Planning
                 </h3>
                 {activeIndex === 1 && (
                     <p className="para">
@@ -38,7 +31,7 @@ export const Tree = ({listItem}) => {
                     </p>
                 )}
                 <h3 className="heading" onClick={() => handleClick(2)}>
-                Online Marketing Campaigns
+                    Online Marketing Campaigns
                 </h3>
                 {activeIndex === 2 && (
                     <p className="para">
